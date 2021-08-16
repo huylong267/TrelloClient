@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600");
+.board-column {
+  flex: 0 0 auto;
+  width: 300px;
+  height: calc(100% - 10px);
+  margin-left: 10px;
+}
+.board-column:not(:first-child) {
+  margin-left: 10px;
+}
+.board-column > * {
+  background-color: #ebecf0;
+  color: #333;
+  padding: 0 8px;
+}
+.board-column header {
+  padding-left: 15px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.board-column footer {
+  padding-left: 10px;
+  height: 46px;
+  line-height: 46px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.board-column ul.task-list {
+  list-style-type: none;
+  margin: 0;
+  max-height: calc(100% - 46px - 46px);
+  overflow-y: auto;
+}
+.board-column ul.task-list::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.board-column ul.task-list::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+.board-column ul.task-list::-webkit-scrollbar-thumb {
+  background-color: #bfc2cf;
+  border-right: 5px solid #ebecf0;
+}
+
+/*# sourceMappingURL=Column.css.map */

@@ -1,0 +1,55 @@
+@import "../../setting";
+
+.board-column {
+  flex: 0 0 auto;
+  width: 300px;
+  height: calc(100% - #{$p_x10});
+  margin-left: $p_x10;
+  &:not(:first-child) {
+    margin-left: $p_x10;
+  }
+  > * {
+    background-color: $column-bg-color;
+    color: #333;
+    padding: 0 8px;
+  }
+
+  header {
+    padding-left: 15px;
+    height: $board-column-header-height;
+    line-height: $board-column-header-height;
+    font-size: 16px;
+    font-weight: bold;
+    border-top-left-radius: $board-column-border-radius;
+    border-top-right-radius: $board-column-border-radius;
+  }
+
+  footer {
+    padding-left: $p_x10;
+    height: $board-column-footer-height;
+    line-height: $board-column-footer-height;
+    border-bottom-left-radius: $board-column-border-radius;
+    border-bottom-right-radius: $board-column-border-radius;
+  }
+
+  ul.task-list {
+    list-style-type: none;
+    margin: 0;
+    max-height: calc(100% - #{$board-column-header-height} - #{$board-column-footer-height});
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+
+    &::-webkit-scrollbar:vertical {
+      width: 11px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: darken($column-bg-color,15);
+      border-right: 5px solid $column-bg-color;
+    }
+
+
+  }
+}

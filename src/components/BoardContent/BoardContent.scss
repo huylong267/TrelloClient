@@ -1,0 +1,21 @@
+@import "../../setting";
+
+
+
+.board-content {
+  display: flex;
+  margin :0 $p_x10 $p_x10;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 11px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color:$common-element-bg ;
+    border-radius: 8px;
+  }
+
+}

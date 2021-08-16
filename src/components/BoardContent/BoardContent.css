@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600");
+.board-content {
+  display: flex;
+  margin: 0 10px 10px;
+  overflow-x: auto;
+}
+.board-content::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.board-content::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+.board-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=BoardContent.css.map */

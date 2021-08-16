@@ -1,0 +1,21 @@
+@import "../../setting";
+
+li.task-item {
+  background-color: white;
+  padding: $p_x10;
+  border-radius: $card-border-radius;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+  &:not(:last-child) {
+    margin-bottom: $p_x10;
+  }
+
+  img {
+    display: block;
+    width: calc(100% + 2 * #{$p_x10});
+    margin: -$p_x10 0 $p_x10 (-$p_x10);
+    border-top-left-radius: $card-border-radius;
+    border-top-right-radius: $card-border-radius;
+  }
+
+}
