@@ -1,0 +1,15 @@
+@import "_setting.scss";
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.3em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.trello-clone-container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 40px 50px 1fr;
+  background-color: $board-bg-color
+}
+
