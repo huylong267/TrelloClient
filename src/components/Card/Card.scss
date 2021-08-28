@@ -1,6 +1,6 @@
 @import "../../setting";
 
-li.task-item {
+.card-item {
   background-color: white;
   padding: $p_x10;
   border-radius: $card-border-radius;
@@ -10,7 +10,7 @@ li.task-item {
     margin-bottom: $p_x10;
   }
 
-  img {
+  img.card-cover {
     display: block;
     width: calc(100% + 2 * #{$p_x10});
     margin: -$p_x10 0 $p_x10 (-$p_x10);
